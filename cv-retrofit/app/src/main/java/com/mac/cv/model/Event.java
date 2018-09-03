@@ -7,17 +7,17 @@ public class Event {
     @SerializedName("id")
     private Integer id;
     @SerializedName("companyName")
-    private String title;
+    private String companyName;
     @SerializedName("projectName")
-    private String url;
+    private String projectName;
     @SerializedName("logoUrl")
-    private String thumbnailUrl;
+    private String logoUrl;
 
-    public Event(Integer albumId, Integer id, String title, String url, String thumbnailUrl) {
-        this.id = id;
-        this.title = title;
-        this.url = url;
-        this.thumbnailUrl = thumbnailUrl;
+    public Event(Integer id, String companyName, String projectName, String logoUrl) {
+        this.setId(id);
+        this.setCompanyName(companyName);
+        this.setProjectName(projectName);
+        this.setLogoUrl(logoUrl);
     }
 
 
@@ -29,27 +29,27 @@ public class Event {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
-    public String getUrl() {
-        return url;
+    public String getProjectName() {
+        return projectName;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
     }
 
-    public String getThumbnailUrl() {
-        return thumbnailUrl;
+    public String getLogoUrl() {
+        return logoUrl;
     }
 
-    public void setThumbnailUrl(String thumbnailUrl) {
-        this.thumbnailUrl = thumbnailUrl;
+    public void setLogoUrl(String logoUrl) {
+        this.logoUrl = logoUrl;
     }
 }

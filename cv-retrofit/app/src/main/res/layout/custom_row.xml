@@ -18,6 +18,7 @@
             android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:contentDescription="company logo"
             android:scaleType="centerCrop" />
 
         <TextView
