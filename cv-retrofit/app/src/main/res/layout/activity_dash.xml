@@ -231,14 +231,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="35dp"
                     android:background="@drawable/button_gradient_background"
+                    android:onClick="onClickBtn"
                     android:text="Details"
-                    android:textColor="#fff"
-                    android:onClick="onClickBtn"/>
+                    android:textColor="#fff" />
             </LinearLayout>
         </LinearLayout>
 
